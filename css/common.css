@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0 0 50px;
+  font-size: 1.6rem;
+  /* font-family: '-apple-system','BlinkMacSystemFont','Hiragino Sans','Hiragino Kaku Gothic ProN',"segoe ui",'游ゴシック  Medium','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  -webkit-overflow-scrolling: touch;
+  font-feature-settings: "palt";
+  letter-spacing: .05em;
+}
+
+.container {
+  width: 92%;/*vwは縦スクロールバー込の幅が基準なので、抜きの%にする */
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-sm {
+  width: 92%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-xs {
+  width: 92%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .pc-col-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pc-col-2 .pc-col-2-item {
+    flex: 0 0 46%;
+  }
+}
+@media screen and (min-width:768px) {
+  margin-bottom: 0;
+}
+@media screen and (min-width:960px) {
+  html {
+    font-size: 14px;
+  }
+}
+.bold {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI semibold", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+a:any-link {
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+
+.main-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .main-wrap {
+    width: 90%;
+    max-width: 1280px;
+  }
+
+}
+@media screen and (min-width: 960px) {
+
+}
+
+
+.secbox {
+  padding: 5.6rem 0;
+}
+.ttl {
+  background: url(../img/icon-crow.png) top center no-repeat;
+  background-size: 3.2rem auto;
+  padding: 5.6rem 0;
+  font-size: 2rem;
+  font-family: adobe-jenson-pro, 'Yu Gothic', '游ゴシック';
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-align: center;
+  margin: 0;
+}
+.ttl.white {
+  background-image: url(../img/icon-salon-w.svg) ;
+  color: #fff;
+}
+.ttl small {
+  font-size: 1.3rem;
+  display: block;
+}
+.subttl {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: normal;
+}
+.menuttl {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: normal;
+}
+.ttlround {
+  font-size: inherit;
+  margin: 0;
+}
+.ttlround::before {
+  content: '●';
+}
+.li-hyphen {
+  list-style-type: none;
+  padding-left: 1em;
+  margin: 0;
+}
+.li-hyphen li {
+  text-indent: -0.8em;
+}
+.li-hyphen li:before {
+  content: '- ';
+}
+.accountbox {
+  border: 1px dotted #CCC;
+  padding: 2rem;
+}
+.howtobox {
+  margin-bottom: 2rem;
+  font-size: .81em;
+}
+.archives {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.archives .archive {
+  flex: 0 0 3em;
+  padding: .6em 0;
+  margin: 0 .4em .4em 0;
+  text-align: center;
+  text-decoration: none;
+  background: #f1f1f1;
+}
+#twitter {
+  border: 1px solid #327cd8;
+  height: 300px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+.fc-time-grid .fc-bgevent, .fc-time-grid .fc-event {
+  cursor: default;
+}
+.bottomcontact {
+  background: #f1f1f1;
+  padding: 1em 0;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.footerbar {
+  background-color: #fff;
+  box-shadow: 0 -3px 6px rgba(0,0,0,.08);
+  transition: all .2s ease-in-out;
+  transform: translateY(100%);
+}
+.footerbar.disp {
+  transform: translateY(0);
+}
+.footerbar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.footerbar-wrap .btn-reserve,
+.footerbar-wrap .btn-footernav {
+  width: 50px;
+  height: 100%;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.footerbar-wrap .logo img {
+  width: 64px;
+  display: block;
+}
+.footerbar-wrap .btn-reserve {
+  background-color: #330057;
+  color: #fff;
+}
+.footerbar-wrap .btn-reserve img {
+  width: 22px;
+  margin: 8px auto 4px;
+  display: block;
+}
+.footerbar-wrap .btn-footernav {
+  background-color: #FAF9F6;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+nav {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  z-index: 99;
+  transform: translateY(200%);
+  transition: all 0.3s ease-out;
+}
+nav.disp {
+  transform: translateY(100%);
+}
+
+nav.spnav-open {
+  transform: translateY(0);
+}
+nav .logo {
+  display: none;
+}
+
+
+input.form-control {
+  font-size: 16px;
+}
