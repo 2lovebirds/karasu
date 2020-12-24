@@ -14,6 +14,7 @@ body {
   -webkit-overflow-scrolling: touch;
   font-feature-settings: "palt";
   letter-spacing: .05em;
+  background: #f5f4ee;
 }
 
 .container {
@@ -158,7 +159,8 @@ img {
   margin: 0 .4em .4em 0;
   text-align: center;
   text-decoration: none;
-  background: #f1f1f1;
+  background: #eae7d9;
+  font-family: adobe-jenson-pro, 'Yu Gothic', '游ゴシック';
 }
 #twitter {
   border: 1px solid #327cd8;
